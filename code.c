@@ -19,7 +19,7 @@ int main()
     int max = INT_MIN;  /*     min int = (2)^31    => -2147483648   */  
     int min = INT_MAX;  /*     max int = (2)^31-1  => 2147483647    */
     int transpose_arr[size][size];  
-    int row_sum;  
+    double row_sum;  
 
     for (int i = 0; i < size; i++) {  
         for (int j = 0; j < size; j++) {
@@ -60,7 +60,7 @@ int main()
         for (int j = 0; j < size; j++) {  
             row_sum += arr[i][j];  
         }  
-        printf("average for row number %d = %d\n", i + 1, row_sum / size);  
+        printf("average for row number %d = %.2f\n", i + 1, row_sum / size);  
     }  
 
     printf("Min 10th col: %d\nMax 5th row : %d\n", min, max);  
